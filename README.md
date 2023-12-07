@@ -1,1 +1,1 @@
-# Manage-Authorization
+# ManageAuthorization

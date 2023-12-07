@@ -16,23 +16,23 @@ Project consists of a simple PowerShell script that walks the user through "zero
 
 - <b>Windows 10</b> (21H2)
 
-<h2>Program walk-through:</h2>
+<h2>Program walk-through: Setting Appropriate Access Permissions</h2>
 
 <p align="center">
-Setting Appropriate Access Permissions: <br/>
+Checking ''projects'' directory and files: <br/>
 <img src="https://i.imgur.com/A3PJH42.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Checking Whether any files exist:  <br/>
+Checking Whether Any Hidden Files Exist: <br/>
 <img src="https://i.imgur.com/kQNDUcE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Change : <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Check If any files in the projects directory have write permissions for the owner type of other: <br/>
+<img src="https://i.imgur.com/ImTHlQf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Change the permissions of the ''project_k.txt'' file so that the owner type of other doesn’t have write permissions: <br/>
+<img src="https://i.imgur.com/WwA42CF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Wait for process to complete (may take some time):  <br/>

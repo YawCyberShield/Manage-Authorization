@@ -10,11 +10,10 @@ Project consists of a simple PowerShell script that walks the user through "zero
 <h2>Languages and Utilities Used</h2>
 
 - <b>Bash Shell</b> 
-- <b>Diskpart</b>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Linux</b> 
 
 <h2>Program walk-through: Setting Appropriate Access Permissions</h2>
 
@@ -27,24 +26,28 @@ Checking Whether Any Hidden Files Exist: <br/>
 <img src="https://i.imgur.com/kQNDUcE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Check If any files in the projects directory have write permissions for the owner type of other: <br/>
+Verify write permissions for owner or others in projects directory files: <br/>
 <img src="https://i.imgur.com/ImTHlQf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Change the permissions of the ''project_k.txt'' file so that the owner type of other doesn’t have write permissions: <br/>
+Remove write permission from the owner type of other in the ''project_k.txt'' file: <br/>
 <img src="https://i.imgur.com/WwA42CF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Comfirm using Is -I   <br/>
+<img src="https://i.imgur.com/HbUlFIc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Remove group read permissions from project_m.txt using chmod g-r :  <br/>
+<img src="https://i.imgur.com/bt17pxr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Set .project_x.txt permissions to read-only for user and group :  <br/>
+<img src="https://i.imgur.com/D3zfojq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Remove the execute permission for the group from the drafts directory:  <br/>
+<img src="https://i.imgur.com/0Ehxt8t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--
